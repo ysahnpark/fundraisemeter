@@ -46,9 +46,9 @@ function thermometer(goalAmount, pledgeAmount, progressAmount, animate) {
     percentageAmount =  Math.min( Math.round(progressAmount / goalAmount * 1000) / 10, 100); //make sure we have 1 decimal point
 
     //let's format the numbers and put them back in the DOM
-    $goal.find(".amount").text( "$" + formatCurrency( goalAmount, 0 ) );
-    $pledge.find(".amount").text( "$" + formatCurrency( pledgeAmount, 0 ) );
-    $progress.find(".amount").text( "$" + formatCurrency( progressAmount, 0 ) );
+    $goal.find(".amount").text( "목표액 $" + formatCurrency( goalAmount, 0 ) );
+    $pledge.find(".amount").text( "약정액 $" + formatCurrency( pledgeAmount, 0 ) );
+    $progress.find(".amount").text( "입금액 $" + formatCurrency( progressAmount, 0 ) );
 
 
     //let's set the progress indicator
